@@ -1,4 +1,7 @@
 package model.interfaces;
+
+import model.Emergency;
+
 public interface IEmergencyService {
 
     String getId();
@@ -9,11 +12,13 @@ public interface IEmergencyService {
 
     boolean isAvailable();
 
-    void assignPersonal();
+    void assignPersonal(int cuantity);
 
-    void realeasePersonal();
+    void realeasePersonal(int cuantity);
     
-    void assignFuel();
+    void useFuel(int cuantity);
 
-    void realeaseFuel();
+    void fillFuel(int cuantity);
+
+    
 }

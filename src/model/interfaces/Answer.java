@@ -1,9 +1,10 @@
 package model.interfaces;
 
+import model.Emergency;
+
 public interface Answer {
+        
+    public void attendEmergency(Emergency emergency);
 
-    void attendEmergency();
-    
-    void assesState();
-
+    public void assesState();
 }

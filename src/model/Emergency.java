@@ -90,12 +90,12 @@ public abstract class Emergency {
         return (endTime - startTime);
     }
 
-    public String getDescripcion() {
+    public String getDescription() {
         return emergencyType + " en " + location + " (Gravedad: " + severityLevel + ")";
     }
 
     public String toString() {
-        return getDescripcion() + " - Tiempo de respuesta: " + responseTime + " minutos";
+        return getDescription() + " - Tiempo de respuesta: " + responseTime + " minutos";
     }
 
 }
